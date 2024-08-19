@@ -1,91 +1,29 @@
-/* *{
-    font-size:16px;
-} This is known as the universal selector */
 html {
-    font-size: 16px;
-    /* background-color:rgba(193, 166, 115, 0.279);*/
-
-}
-
-
-#navbar {
-    padding: 8px;
-    margin: 0;
-}
-
-#align {
-    text-align: center;
+    font-size: 14px;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+
     color: #444444;
-    /* font-size:1rem;
-    font-weight:bold;
-    text-align:justify;
-    line-height:1.5;
-     */
+    font-size: 1em;
 }
 
 h1 {
-    /* color:darkblue; */
     text-align: center;
-
-    /* font-size:3rem;
-    font-size:3em; */
-    /* text-decoration: underline;
-    text-transform: uppercase;
-*/
-}
-
-#unique {
-    width: 100%;
-    object-fit: cover;
-    height:100px;
-    
-}
-
-/* span.Location{
-    color:grey;
-
-} */
-#about {
-    display: flex;
-    max-width: 800px;
-    margin: 0 auto;
-
-}
-
-#description {
-    font-size: 1.25rem;
-    width: 50%;
-    padding: 0 8px;
-}
-
-#team {
-    width: 50%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #222222;
+    margin: 12px 0;
 }
 
 h1 {
     font-size: 2.5rem;
+
 }
 
 h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 h3 {
@@ -104,29 +42,12 @@ h6 {
     font-size: 1rem;
 }
 
-#team-image {
-    width: 100%;
-    ;
+a:hover,
+a:focus
 
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    margin-bottom: 8px;
-
-}
-
-#jobs {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-
-.apply {
-    float: right;
+/* hover is for moouse, focus is for keyboard*/
+    {
+    color: #1D4ED8;
 }
 
 a {
@@ -134,89 +55,90 @@ a {
     color: #3B82F6
 }
 
-a:hover,
-a:focus
-/* hover is for moouse, focus is for keyboard*/
- {
-    color: #1D4ED8;
+#logowithtext {
+    display: none;
 }
 
-#footer {
-    background: color #FAFAFA;
+#logo_only {
+    display: block;
+}
+
+#unique {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     padding: 8px;
-    margin-top: 32px;
-    text-align: center;
+    max-width: 500px;
 }
 
-#footer-links {
-    list-style: none;
-    /*display:flex;*/
+#description {
+    font-size: 1.25rem;
+}
+
+#team-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+#jobs-list {
+    display: block;
+}
+
+#jobs {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
 
 }
 
-#footer-links li {
-    display: inline;
+.job {
+    border: 1px solid #dddddd;
+    margin-top: 8px;
+    border-radius: 5px;
     padding: 8px;
-    margin: 0 16 px;
 }
 
-.copyright {
-    color: #71717A;
-    margin: 0;
-    font-size: 0.875rem;
-}
-
-#table {
-    /* width:100%; */
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-.jobsheaderrow th {
-    border: 1px solid black;
-    padding: 8px;
-    background-color: #BFDBFE;
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 500px;
     color: #222222;
-    /* border-collapse:collapse; */
 }
 
-#table {
-    background-color: white;
+.job-detail {
+    margin-top: 5px;
+    color: #555555;
 }
 
-#table tr:nth-child(odd) {
-    background-color: #EFF6FF;
+#links {
+    margin: 0px 12px;
 }
-
-.jobsdatarow td {
-    border: 1px solid black;
-    padding: 8px;
-    /* border-collapse:collapse; */
-}
-
-/* .remote {
-    text-align: center;
-} */
 
 #application {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
 }
 
-#applicationform {
+.form-group label {
     font-weight: 600;
     margin: 8px;
 
 }
 
-#applicationform input,
-select,
-textarea {
-    padding: 4px;
-    font-size: 1.25rem;
-    margin-top: 4px;
-    border-radius: 5px;
+.form-group input,select,textarea{
+    width:90%;
+    padding:4px;
+    font-size:1.25rem;
+    margin-top:4px;
+    border-radius:5px;
     border: 1px solid gray;
 }
 
@@ -225,25 +147,153 @@ textarea {
 }
 
 .formgroup textarea {
-    width: 100%;
+   
     font-family: 'Roboto', sans-serif;
 }
-
-.formgroup input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
+#footer {
+    background: #E2E8F0;;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
 }
 
-.formgroup input[type="submit"] {
-    display: flex;
-    margin: 0 auto;
-    font-weight: 500;
-    background-color: #3B82F6;
-    color: white;
-    cursor:pointer; 
+#footer-links {
+    list-style: none;
+    padding-left: 0px;
+
+}
+
+#footer-links li {
+    /* display: inline; */
+    padding: 8px;
+    
+    margin: 0px 16px;
+}
+
+.copyright {
+    color: #71717A;
+   
+    font-size: 0.875rem;
+   
+}
+
+/* small devices (tablets)*/
+@media screen and (min-width:576px) {
+    html {
+        font-size: 16px;
     }
-    input[type="submit"]:hover,
-    input[type="submit"]:focus{
-       background-color: black;
+
+    #logo_only {
+        display: none;
+    }
+
+    #logowithtext {
+        display: block;
+    }
+
+    #unique {
+        height: 200px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    #team {
+        width: 50%;
+    }
+
+    #jobs-list {
+        display: none;
+    }
+
+    #jobs {
+        display: table;
+        max-width: 500px;
+    }
+
+    #table {
+        /* width:100%; */
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .jobsheaderrow th {
+        border: 1px solid black;
+        padding: 8px;
+        background-color: #BFDBFE;
+        color: #222222;
+        /* border-collapse:collapse; */
+    }
+
+    #table {
+        background-color: white;
+    }
+
+    #table tr:nth-child(odd) {
+        background-color: #EFF6FF;
+    }
+
+    .jobsdatarow td {
+        border: 1px solid black;
+        padding: 8px;
+        /* border-collapse:collapse; */
+    }
+    .form-group input,select{
+        width:auto;
+    }
+    .form-group textarea{
+        width:80%;
+        }
+        #footer-links li {
+            display:inline;
+        } 
+
+}
+
+/*medium devices(laptop)*/
+@media screen and (min-width:768px) {
+    #unique {
+        height: 300px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    #about {
+        max-width: 800px;
+        flex-direction: row;
+
 
     }
+
+    #description {
+        width: 50%;
+        padding-right: 8px;
+    }
+
+    #jobs {
+        display: table;
+        max-width: 800px;
+    }
+
+}
+
+@media screen and (min-width:992px) {}
+
+/* Extra large devices (large desktops)*/
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 20px;
+    }
+
+    #application {
+        max-width: 800px;
+    }
+}
+
+#navbar {
+    padding: 8px;
+    margin: 0;
+}
