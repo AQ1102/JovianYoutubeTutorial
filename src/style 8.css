@@ -176,6 +176,24 @@ a {
     font-size: 0.875rem;
    
 }
+.formgroup input[type="submit"] {
+    /* display: flex; */
+    margin: 0 auto;
+    font-weight: 500;
+    background-color: #3B82F6;
+    color: white;
+    cursor:pointer; 
+    height:35px;
+    min-width:30%;
+    font-size:12px;
+    border-radius:5px;
+    border-color: white;
+    }
+    input[type="submit"]:hover,
+input[type="submit"]:focus{
+background-color: black;
+
+}
 
 /* small devices (tablets)*/
 @media screen and (min-width:576px) {
@@ -245,9 +263,23 @@ a {
     .form-group textarea{
         width:80%;
         }
+        .formgroup input[type="submit"] {
+            display: flex;
+            margin: 0 auto;
+            font-weight: 500;
+            background-color: #3B82F6;
+            color: white;
+            cursor:pointer; 
+            }
         #footer-links li {
             display:inline;
         } 
+        .formgroup input[type="submit"] {
+            min-width:40%;
+            font-size:14px;
+
+
+}
 
 }
 
